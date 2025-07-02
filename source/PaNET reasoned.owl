@@ -3656,7 +3656,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00202"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00400"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01023"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01216"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01227"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_standing_waves</obo:IAO_0000119>
@@ -3839,8 +3839,8 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01034"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01195"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_scattering techniques#Inelastic_X-ray_scattering_(IXS)</obo:IAO_0000119>
         <rdfs:label>inelastic x-ray scattering technique</rdfs:label>
         <skos:altLabel>IXS</skos:altLabel>
@@ -4089,14 +4089,6 @@
     <!-- http://purl.org/pan-science/PaNET/PaNET01195 -->
 
     <owl:Class rdf:about="http://purl.org/pan-science/PaNET/PaNET01195">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET00100"/>
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01034"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00100"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01034"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Raman_spectroscopy</obo:IAO_0000119>
@@ -6484,14 +6476,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01106"/>
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01300"/>
                     <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01326"/>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01088"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01261"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01300"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01116"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01326"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_birefringence_imaging</obo:IAO_0000119>
         <rdfs:label>x-ray birefringence imaging  technique</rdfs:label>

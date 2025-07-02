@@ -4645,6 +4645,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01020"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01022"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01023"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01216"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01227"/>
@@ -4904,7 +4905,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01033"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01034"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01195"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_scattering techniques#Inelastic_X-ray_scattering_(IXS)</obo:IAO_0000119>
         <rdfs:label>inelastic x-ray scattering technique</rdfs:label>
         <skos:altLabel>IXS</skos:altLabel>
@@ -4939,7 +4939,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01182"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01186"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01195"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Resonant_inelastic_X-ray_scattering</obo:IAO_0000119>
         <rdfs:label>resonant inelastic x-ray scattering technique</rdfs:label>
         <skos:altLabel>RIXS</skos:altLabel>
@@ -5253,14 +5252,6 @@
     <!-- http://purl.org/pan-science/PaNET/PaNET01195 -->
 
     <owl:Class rdf:about="http://purl.org/pan-science/PaNET/PaNET01195">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET00100"/>
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01034"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00001"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00002"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00003"/>
@@ -5439,7 +5430,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01156"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01182"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01195"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_emission_spectroscopy</obo:IAO_0000119>
         <rdfs:label>x-ray emission spectroscopy technique</rdfs:label>
         <skos:altLabel>XES</skos:altLabel>
@@ -7649,7 +7639,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01182"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01184"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01188"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01195"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01273"/>
         <rdfs:label>inelastic x-ray small angle scattering technique</rdfs:label>
     </owl:Class>
@@ -9124,7 +9113,6 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01106"/>
-                    <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01300"/>
                     <rdf:Description rdf:about="http://purl.org/pan-science/PaNET/PaNET01326"/>
                 </owl:intersectionOf>
             </owl:Class>
@@ -9135,21 +9123,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00004"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00005"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00100"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00202"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00204"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00302"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET00401"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01012"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01061"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01088"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01090"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01106"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01116"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01138"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01227"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01261"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01285"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01300"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/pan-science/PaNET/PaNET01326"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/X-ray_birefringence_imaging</obo:IAO_0000119>
         <rdfs:label>x-ray birefringence imaging  technique</rdfs:label>
