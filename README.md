@@ -1,55 +1,29 @@
-# ExPaNDS Photon and Neutron Experimental Techniques (PaNET) ontology
+# Enhancing reasoning capabilities for the Photon and Neutron Experimental Techniques (PaNET) ontology
 
-The Photon and Neutron Experimental Technique (PaNET) ontology provides a taxonomy of experimental techniques relevant for the Photon and Neutron (PaN) community. This ontology is being developed as part of the [Work Package 3 on EOSC Data Catalogue Services for PaN national Research Infrastructures](https://expands-eu.github.io/WP1-reporting/reports-wp/reports-wp3.html) of the [ExPaNDS project](https://expands.eu/).
+This is a forked repository of the original [PaNET ontology repository](https://github.com/ExPaNDS-eu/ExPaNDS-experimental-techniques-ontology). 
 
+The restructure of the ontology allows a reasoner to automatically infer the taxonomy of the techniques. This replaces the previous approach of manually curating the taxonomical relationships (e.g. subclass relationships), enabling better coverage of all relevant relationships while reducing the workload for the PaNET maintenance group. These changes have since been implemented in the main repository, and the ontology in this branch is now outdated. Please refer to the original repository for ongoing developments.
 
-The ontology allows to add semantic tags to datasets, and other related research objects, to indicate the experimental technique(s) that was (or were) used to create them.
+The details of the restructure can be found at [10.1107/S1600577525005272](https://doi.org/10.1107/S1600577525005272).
 
-See the associated deliverable on the ExPaNDS ontologies at [10.5281/zenodo.4806026](https://doi.org/10.5281/zenodo.4806026).
+To cite the restructuring work, you can use:
 
-To cite the deliverable, please use:
-
-``Collins, Steve P., da Graça Ramos, Silvia, Iyayi, Daniel, Görzig, Heike, González Beltrán, Alejandra, Ashton, Alun, Egli, Stefan, and Minotti, Carlo. “Expands Ontologies V1.0”. Zenodo, June 4, 2021. doi:10.5281/zenodo.4806026.``
-
-You can see the PaNET ontology documentation at: https://expands-eu.github.io/ExPaNDS-experimental-techniques-ontology/index-en.html
-
-You can also browse the PaNET ontology in BioPortal: https://bioportal.bioontology.org/ontologies/PANET
-
-The ontology is provided using the [CC-BY 4.0license](https://creativecommons.org/licenses/by/4.0/).
-
-This repository is structured as follows:
-- the **meetings** folder contains documents related to the WP3 discussions on the ontology,
-- the **source** folder contains a CSV file with the list of experimental techniques and its relationships, which is used to generate the associated ontology file using the Web Ontology Language (OWL),
-- the **releases** folder contains the different releases of the PaNET ontology,
-- the **gh-pages** branch contains the ontology documentation (produced automatically by a GitHub action).
-
-### Notes on Workflow
-
-This workflow will be automated using CI in a next release.
-
-The PaNET.owl is generated from an Excel/CSV file using [ROBOT](https://search.maven.org/artifact/org.obolibrary.robot/robot) software. 
-Here are some instructions to generate the OWL file:
-- if robot-1.8.1/bin/robot.jar does not exist: go to teh directory robot-1.8.1 and do mvn install.
-- check robot-1.8.1/bin/robot.jar exists Then execute:
-robot template --template PaNET.csv --ontology-iri 'http://purl.org/ExPaNDS/' --output PaNET.owl
-
-After the PaNET.owl file has been generated, please follow the following steps: 
-
-- Open PaNET_metadata.owl in Protégé
-- Update metadata (version, created etc) and save
-- Open PaNET techniques ontology created by ROBOT in current window
-- Refactor/merge ontologies; select both ontologies; create new ontology; save file (ontology IRI http://www.purl.org/pan-science/PaNET/PaNET.owl )
-- Start reasoner (e.g. HermiT)
-- Export inferred axioms as ontology; tick all boxes and save to the final owl file; Ontology IRI:http://www.purl.org/pan-science/PaNET/PaNET.owl 
-- Select file name; save as RDF/XML.
-- Update the Widoco documentation - this step is done automatically relying on a GitHub Action. 
-
-
-### Review process and release
-
-
-At the moment, only one reviewer can approve and merge the changes to the master branch. Before any merge to the master branch, it is recommended to upload the new version of the OWL file to BioPortal to ensure that the file is correctly configured and displayed in BioPortal before any release. In each upload, BioPortal will check the validity of the file, convert it to other formats such as RDF and XML. After the merge to master, the PaNET ontology will automatically be updated on BioPortal over the night.
-
+```
+@article{panet_restructure,
+  title = {Towards a new vision of PaNET: enhancing reasoning capabilities for better photon and neutron data discovery},
+  volume = {32},
+  ISSN = {1600-5775},
+  url = {http://dx.doi.org/10.1107/S1600577525005272},
+  DOI = {10.1107/s1600577525005272},
+  number = {5},
+  journal = {Journal of Synchrotron Radiation},
+  publisher = {International Union of Crystallography (IUCr)},
+  author = {Tan,  Terence and Bagó,  Balázs and Busch,  Sebastian and Duyme,  Renaud and Gaisné,  Guillaume and González Beltrán,  Alejandra Noemí and G\"{o}rzig,  Heike and Koumoutsos,  Giannis and Krahl,  Rolf and Millar,  Paul and Minotti,  Carlo and Nentwich,  Melanie and Schrettner,  Lajos and Syder,  Kirsty and Rocca-Serra,  Philippe and Sansone,  Susanna-Assunta and Collins,  Stephen P.},
+  year = {2025},
+  month = jul,
+  pages = {1361–1369}
+}
+```
 
 
 
